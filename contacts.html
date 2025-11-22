@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти - DentCare</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <img src="images/logo.jpg" alt="DentCare Logo" class="logo-img">
+                    <span class="logo-text">DentCare</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Головна</a></li>
+                    <li><a href="services.html" class="nav-link">Послуги</a></li>
+                    <li><a href="doctors.html" class="nav-link">Лікарі</a></li>
+                    <li><a href="contacts.html" class="nav-link active">Контакти</a></li>
+                </ul>
+                <button class="btn btn-primary" id="bookingBtn">Записатись</button>
+                <div class="burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Контакти</h1>
+            <p class="page-subtitle">Ми завжди раді відповісти на ваші запитання</p>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3>Телефон</h3>
+                    <p><a href="tel:+380441234567">+380 (44) 123-45-67</a></p>
+                    <p><a href="tel:+380671234567">+380 (67) 123-45-67</a></p>
+                    <span class="contact-note">Цілодобова підтримка</span>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
+                    <p><a href="mailto:info@dentcare.ua">info@dentcare.ua</a></p>
+                    <p><a href="mailto:booking@dentcare.ua">booking@dentcare.ua</a></p>
+                    <span class="contact-note">Відповідаємо протягом години</span>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>Адреса</h3>
+                    <p>м. Київ, вул. Хрещатик, 1</p>
+                    <p>офіс 101, 1-й поверх</p>
+                    <span class="contact-note">5 хвилин від метро</span>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">🕐</div>
+                    <h3>Режим роботи</h3>
+                    <p>Пн-Пт: 9:00 - 20:00</p>
+                    <p>Сб: 10:00 - 18:00</p>
+                    <p>Нд: Вихідний</p>
+                    <span class="contact-note">Запис на зручний час</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-form-container">
+                    <h2 class="section-title">Зворотний зв'язок</h2>
+                    <p class="section-subtitle">Заповніть форму і ми зв'яжемося з вами найближчим часом</p>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-name">Ім'я *</label>
+                                <input type="text" id="contact-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-phone">Телефон *</label>
+                                <input type="tel" id="contact-phone" name="phone" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email</label>
+                            <input type="email" id="contact-email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject">Тема звернення</label>
+                            <select id="contact-subject" name="subject">
+                                <option value="">Оберіть тему</option>
+                                <option value="booking">Запис на прийом</option>
+                                <option value="consultation">Консультація</option>
+                                <option value="prices">Питання про ціни</option>
+                                <option value="services">Інформація про послуги</option>
+                                <option value="complaint">Скарга</option>
+                                <option value="other">Інше</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Повідомлення *</label>
+                            <textarea id="contact-message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="privacy" required>
+                                <span>Я погоджуюсь з <a href="#">політикою конфіденційності</a></span>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large">Відправити повідомлення</button>
+                    </form>
+                    <div class="form-success" id="formSuccess">
+                        <div class="success-icon">✓</div>
+                        <h3>Дякуємо за звернення!</h3>
+                        <p>Ми отримали ваше повідомлення та зв'яжемося з вами найближчим часом.</p>
+                    </div>
+                </div>
+                <div class="contact-image">
+                    <img src="images/logo1.jpg" alt="Реєстратура">
+                    <div class="contact-quick-info">
+                        <h3>Швидкий зв'язок</h3>
+                        <div class="messenger-links">
+                            <a href="#" class="messenger-link">
+                                <img src="images/icon-telegram.svg" alt="Telegram">
+                                <span>Telegram</span>
+                            </a>
+                            <a href="#" class="messenger-link">
+                                <img src="images/icon-viber.svg" alt="Viber">
+                                <span>Viber</span>
+                            </a>
+                            <a href="#" class="messenger-link">
+                                <img src="images/icon-whatsapp.webp" alt="WhatsApp">
+                                <span>WhatsApp</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Як нас знайти</h2>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <img src="images/map.png" alt="Карта">
+                    <div class="map-overlay">
+                        <p>📍 м. Київ, вул. Хрещатик, 1</p>
+                        <a href="https://maps.google.com" target="_blank" class="btn btn-secondary">Відкрити в Google Maps</a>
+                    </div>
+                </div>
+            </div>
+            <div class="location-info">
+                <div class="location-item">
+                    <h4>🚇 Як дістатися</h4>
+                    <p>Метро "Майдан Незалежності" - 5 хвилин пішки</p>
+                    <p>Метро "Хрещатик" - 7 хвилин пішки</p>
+                </div>
+                <div class="location-item">
+                    <h4>🚗 Паркування</h4>
+                    <p>Безкоштовна підземна парковка для пацієнтів</p>
+                    <p>В'їзд з вул. Прорізної</p>
+                </div>
+                <div class="location-item">
+                    <h4>♿ Доступність</h4>
+                    <p>Обладнано пандусом для візків</p>
+                    <p>Ліфт до всіх поверхів</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Часті питання</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Як записатися на прийом?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ви можете записатися за телефоном +380 (44) 123-45-67, через форму на сайті, або особисто в клініці. Також доступний запис через Telegram, Viber, WhatsApp.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Чи потрібно щось брати з собою на прийом?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>На першу консультацію принесіть документ, що посвідчує особу. Якщо є - попередні знімки, результати аналізів та медичну документацію від попередніх лікарів.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Які способи оплати ви приймаєте?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ми приймаємо готівку, банківські картки (Visa, MasterCard), безконтактні платежі (Apple Pay, Google Pay). Також доступна розстрочка.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Чи є у вас безкоштовна консультація?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Так, перша консультація в нашій клініці безкоштовна. Лікар проведе огляд, зробить діагностику та запропонує план лікування.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Чи працюєте ви з дітьми?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Так, у нас є досвідчений дитячий стоматолог. Ми приймаємо дітей від 1 року. Створюємо комфортну атмосферу для маленьких пацієнтів.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Чи надаєте ви гарантію на роботу?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Так, ми надаємо офіційну гарантію на всі види робіт: пломби - 1 рік, коронки - 2 роки, імпланти - 5 років (при дотриманні рекомендацій лікаря).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="logo">
+                        <img src="images/logo.jpg" alt="DentCare Logo" class="logo-img">
+                        <span class="logo-text">DentCare</span>
+                    </div>
+                    <p class="footer-description">Ваша посмішка - наша турбота. Сучасна стоматологія з європейським рівнем.</p>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Навігація</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="services.html">Послуги</a></li>
+                        <li><a href="doctors.html">Лікарі</a></li>
+                        <li><a href="contacts.html">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Контакти</h4>
+                    <ul class="footer-contacts">
+                        <li>📞 +380 (44) 123-45-67</li>
+                        <li>📧 info@dentcare.ua</li>
+                        <li>📍 м. Київ, вул. Хрещатик, 1</li>
+                        <li>🕐 Пн-Пт: 9:00-20:00<br>Сб: 10:00-18:00</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Соціальні мережі</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Telegram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DentCare. Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <span class="modal-close" id="modalClose">&times;</span>
+            <h2 class="modal-title">Записатись на прийом</h2>
+            <form class="booking-form" id="bookingForm">
+                <div class="form-group">
+                    <label for="name">Ім'я *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Телефон *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Послуга</label>
+                    <select id="service" name="service">
+                        <option value="">Оберіть послугу</option>
+                        <option value="consultation">Консультація</option>
+                        <option value="cleaning">Гігієна та чистка</option>
+                        <option value="treatment">Лікування зубів</option>
+                        <option value="implants">Імплантація</option>
+                        <option value="orthodontics">Ортодонтія</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Бажана дата</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <div class="form-group">
+                    <label for="message">Коментар</label>
+                    <textarea id="message" name="message" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-large">Відправити заявку</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

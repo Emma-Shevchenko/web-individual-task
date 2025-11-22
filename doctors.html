@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наші лікарі - DentCare</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <img src="images/logo.jpg" alt="DentCare Logo" class="logo-img">
+                    <span class="logo-text">DentCare</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Головна</a></li>
+                    <li><a href="services.html" class="nav-link">Послуги</a></li>
+                    <li><a href="doctors.html" class="nav-link active">Лікарі</a></li>
+                    <li><a href="contacts.html" class="nav-link">Контакти</a></li>
+                </ul>
+                <button class="btn btn-primary" id="bookingBtn">Записатись</button>
+                <div class="burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Наші лікарі</h1>
+            <p class="page-subtitle">Команда досвідчених спеціалістів з європейською освітою</p>
+        </div>
+    </section>
+
+    <!-- Doctors Grid -->
+    <section class="doctors-section">
+        <div class="container">
+            <!-- Doctor Card 1 -->
+            <div class="doctor-card">
+                <div class="doctor-image-wrapper">
+                    <img src="images/doctor-1.png" alt="Олена Коваленко" class="doctor-image">
+                    <div class="doctor-badge">Головний лікар</div>
+                </div>
+                <div class="doctor-info">
+                    <h3 class="doctor-name">Олена Коваленко</h3>
+                    <p class="doctor-specialty">Стоматолог-терапевт, ортопед</p>
+                    <div class="doctor-experience">
+                        <span class="experience-badge">15 років досвіду</span>
+                    </div>
+                    <ul class="doctor-credentials">
+                        <li>🎓 Національний медичний університет ім. О.О. Богомольця</li>
+                        <li>🏆 Сертифікат спеціаліста вищої категорії</li>
+                        <li>🌍 Стажування в Німеччині та Швейцарії</li>
+                        <li>📚 Автор 12 наукових публікацій</li>
+                    </ul>
+                    <div class="doctor-description">
+                        <p>Спеціалізується на естетичній реставрації зубів, протезуванні та комплексному лікуванні. Використовує сучасні методики мікроскопної стоматології.</p>
+                    </div>
+                    <button class="btn btn-primary" onclick="openModal()">Записатись до лікаря</button>
+                </div>
+            </div>
+
+            <!-- Doctor Card 2 -->
+            <div class="doctor-card reverse">
+                <div class="doctor-info">
+                    <h3 class="doctor-name">Дмитро Петренко</h3>
+                    <p class="doctor-specialty">Стоматолог-хірург, імплантолог</p>
+                    <div class="doctor-experience">
+                        <span class="experience-badge">12 років досвіду</span>
+                    </div>
+                    <ul class="doctor-credentials">
+                        <li>🎓 Львівський національний медичний університет</li>
+                        <li>🏆 Сертифікований імплантолог (Nobel Biocare, Straumann)</li>
+                        <li>🌍 Навчання в клініках Ізраїлю та США</li>
+                        <li>💎 Понад 800 успішних імплантацій</li>
+                    </ul>
+                    <div class="doctor-description">
+                        <p>Провідний спеціаліст з імплантації та хірургічної стоматології. Виконує складні операції All-on-4, синус-ліфтинг, атравматичне видалення зубів мудрості.</p>
+                    </div>
+                    <button class="btn btn-primary" onclick="openModal()">Записатись до лікаря</button>
+                </div>
+                <div class="doctor-image-wrapper">
+                    <img src="images/doctor-2.png" alt="Дмитро Петренко" class="doctor-image">
+                    <div class="doctor-badge">Імплантолог</div>
+                </div>
+            </div>
+
+            <!-- Doctor Card 3 -->
+            <div class="doctor-card">
+                <div class="doctor-image-wrapper">
+                    <img src="images/doctor-3.png" alt="Марія Іваненко" class="doctor-image">
+                    <div class="doctor-badge">Ортодонт</div>
+                </div>
+                <div class="doctor-info">
+                    <h3 class="doctor-name">Марія Іваненко</h3>
+                    <p class="doctor-specialty">Стоматолог-ортодонт</p>
+                    <div class="doctor-experience">
+                        <span class="experience-badge">10 років досвіду</span>
+                    </div>
+                    <ul class="doctor-credentials">
+                        <li>🎓 Вінницький національний медичний університет</li>
+                        <li>🏆 Сертифікований спеціаліст Invisalign</li>
+                        <li>🌍 Стажування в клініках Італії</li>
+                        <li>✨ Понад 400 випадків виправлення прикусу</li>
+                    </ul>
+                    <div class="doctor-description">
+                        <p>Експерт з виправлення прикусу брекет-системами та елайнерами. Працює з дітьми та дорослими, розробляє індивідуальні плани лікування для кожного пацієнта.</p>
+                    </div>
+                    <button class="btn btn-primary" onclick="openModal()">Записатись до лікаря</button>
+                </div>
+            </div>
+
+            <!-- Doctor Card 4 -->
+            <div class="doctor-card reverse">
+                <div class="doctor-info">
+                    <h3 class="doctor-name">Андрій Мельник</h3>
+                    <p class="doctor-specialty">Стоматолог-терапевт, ендодонтист</p>
+                    <div class="doctor-experience">
+                        <span class="experience-badge">8 років досвіду</span>
+                    </div>
+                    <ul class="doctor-credentials">
+                        <li>🎓 Харківський національний медичний університет</li>
+                        <li>🏆 Спеціаліст ендодонтії під мікроскопом</li>
+                        <li>🌍 Сертифікати міжнародних конференцій</li>
+                        <li>🔬 Використання дентального мікроскопу Carl Zeiss</li>
+                    </ul>
+                    <div class="doctor-description">
+                        <p>Фахівець з лікування кореневих каналів під мікроскопом. Спеціалізується на складних ендодонтичних випадках, перелікуванні каналів, збереженні зубів.</p>
+                    </div>
+                    <button class="btn btn-primary" onclick="openModal()">Записатись до лікаря</button>
+                </div>
+                <div class="doctor-image-wrapper">
+                    <img src="images/doctor-4.png" alt="Андрій Мельник" class="doctor-image">
+                    <div class="doctor-badge">Ендодонтист</div>
+                </div>
+            </div>
+
+            <!-- Doctor Card 5 -->
+            <div class="doctor-card">
+                <div class="doctor-image-wrapper">
+                    <img src="images/doctor-5.png" alt="Ірина Шевченко" class="doctor-image">
+                    <div class="doctor-badge">Пародонтолог</div>
+                </div>
+                <div class="doctor-info">
+                    <h3 class="doctor-name">Ірина Шевченко</h3>
+                    <p class="doctor-specialty">Стоматолог-пародонтолог, гігієніст</p>
+                    <div class="doctor-experience">
+                        <span class="experience-badge">9 років досвіду</span>
+                    </div>
+                    <ul class="doctor-credentials">
+                        <li>🎓 Одеський національний медичний університет</li>
+                        <li>🏆 Сертифікат спеціаліста з пародонтології</li>
+                        <li>🌍 Навчання в клініках Франції</li>
+                        <li>💫 Експерт професійної гігієни та відбілювання</li>
+                    </ul>
+                    <div class="doctor-description">
+                        <p>Спеціалізується на лікуванні захворювань ясен, професійній гігієні порожнини рота, відбілюванні зубів. Допомагає пацієнтам підтримувати здоров'я ясен.</p>
+                    </div>
+                    <button class="btn btn-primary" onclick="openModal()">Записатись до лікаря</button>
+                </div>
+            </div>
+
+            <!-- Doctor Card 6 -->
+            <div class="doctor-card reverse">
+                <div class="doctor-info">
+                    <h3 class="doctor-name">Віктор Савченко</h3>
+                    <p class="doctor-specialty">Дитячий стоматолог</p>
+                    <div class="doctor-experience">
+                        <span class="experience-badge">11 років досвіду</span>
+                    </div>
+                    <ul class="doctor-credentials">
+                        <li>🎓 Національний медичний університет ім. О.О. Богомольця</li>
+                        <li>🏆 Спеціаліст дитячої стоматології</li>
+                        <li>🌍 Курси з психології роботи з дітьми</li>
+                        <li>👶 Працює з дітьми від 1 року</li>
+                    </ul>
+                    <div class="doctor-description">
+                        <p>Досвідчений дитячий стоматолог, який знаходить підхід до кожної дитини. Лікування без страху та сліз, у ігровій формі. Профілактика та навчання правильній гігієні.</p>
+                    </div>
+                    <button class="btn btn-primary" onclick="openModal()">Записатись до лікаря</button>
+                </div>
+                <div class="doctor-image-wrapper">
+                    <img src="images/doctor-6.png" alt="Віктор Савченко" class="doctor-image">
+                    <div class="doctor-badge">Дитячий лікар</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Values -->
+    <section class="team-values">
+        <div class="container">
+            <h2 class="section-title">Чому наша команда - найкраща</h2>
+            <div class="values-grid">
+                <div class="value-item">
+                    <div class="value-icon">🎓</div>
+                    <h3>Постійне навчання</h3>
+                    <p>Наші лікарі регулярно підвищують кваліфікацію на міжнародних курсах та конференціях</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon">❤️</div>
+                    <h3>Турбота про пацієнтів</h3>
+                    <p>Індивідуальний підхід та увага до кожного пацієнта - наш головний пріоритет</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon">⚡</div>
+                    <h3>Сучасні технології</h3>
+                    <p>Використовуємо новітнє обладнання та передові методи лікування</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon">🤝</div>
+                    <h3>Командна робота</h3>
+                    <p>Консиліум лікарів для вирішення складних випадків та найкращого результату</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Оберіть свого лікаря</h2>
+                <p class="cta-text">Запишіться на прийом до обраного спеціаліста</p>
+                <button class="btn btn-primary btn-large" id="ctaBooking">Записатись на прийом</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="logo">
+                        <img src="images/logo.jpg" alt="DentCare Logo" class="logo-img">
+                        <span class="logo-text">DentCare</span>
+                    </div>
+                    <p class="footer-description">Ваша посмішка - наша турбота. Сучасна стоматологія з європейським рівнем.</p>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Навігація</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="services.html">Послуги</a></li>
+                        <li><a href="doctors.html">Лікарі</a></li>
+                        <li><a href="contacts.html">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Контакти</h4>
+                    <ul class="footer-contacts">
+                        <li>📞 +380 (44) 123-45-67</li>
+                        <li>📧 info@dentcare.ua</li>
+                        <li>📍 м. Київ, вул. Хрещатик, 1</li>
+                        <li>🕐 Пн-Пт: 9:00-20:00<br>Сб: 10:00-18:00</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Соціальні мережі</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Telegram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DentCare. Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <span class="modal-close" id="modalClose">&times;</span>
+            <h2 class="modal-title">Записатись на прийом</h2>
+            <form class="booking-form" id="bookingForm">
+                <div class="form-group">
+                    <label for="name">Ім'я *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Телефон *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="doctor">Оберіть лікаря</label>
+                    <select id="doctor" name="doctor">
+                        <option value="">Будь-який доступний лікар</option>
+                        <option value="kovalenko">Олена Коваленко - Терапевт, ортопед</option>
+                        <option value="petrenko">Дмитро Петренко - Хірург, імплантолог</option>
+                        <option value="ivanenko">Марія Іваненко - Ортодонт</option>
+                        <option value="melnyk">Андрій Мельник - Терапевт, ендодонтист</option>
+                        <option value="shevchenko">Ірина Шевченко - Пародонтолог, гігієніст</option>
+                        <option value="savchenko">Віктор Савченко - Дитячий стоматолог</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Бажана дата</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <div class="form-group">
+                    <label for="message">Коментар</label>
+                    <textarea id="message" name="message" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-large">Відправити заявку</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
