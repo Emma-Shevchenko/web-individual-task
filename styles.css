@@ -294,6 +294,12 @@ a {
     gap: 30px;
 }
 
+a.service-card {
+    text-decoration: none; /* Прибираємо підкреслення */
+    color: inherit;        /* Текст залишається чорним/сірим, а не синім */
+    display: block;        /* Щоб картка поводилась як блок */
+}
+
 .service-card {
     background: var(--white);
     padding: 35px 25px;
@@ -1333,7 +1339,6 @@ a {
     }
 
     .doctor-image-wrapper {
-        height: 400px;
         order: -1; 
     }
 
@@ -1481,6 +1486,11 @@ a {
         text-align: center;
     }
 
+    .footer .logo {
+        justify-content: center; /* Центрує картинку і текст логотипу по горизонталі */
+        margin-bottom: 20px;
+    }
+
     .social-links {
         justify-content: center;
         flex-direction: row;
@@ -1495,6 +1505,15 @@ a {
 
     .modal-title {
         font-size: 24px;
+    }
+
+    /* Центруємо кнопки в деталях послуг та у лікарів */
+    .service-detail-content .btn,
+    .doctor-info .btn {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
     }
 }
 
