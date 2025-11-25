@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    // 1. Бургер-меню
+    // Бургер-меню
     const burger = document.getElementById('burger');
     const navMenu = document.querySelector('.nav-menu');
 
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
         navMenu.classList.toggle('active');
     });
 
-    // закриваємо меню при кліку на посилання
+    // Закриваємо меню при кліку на посилання
     document.querySelectorAll('.nav-link').forEach(link => {
         link.addEventListener('click', () => {
             burger.classList.remove('active');
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // 2. Анімація лічильників на головній
+    // Анімація лічильників на головній
     const counters = document.querySelectorAll('.stat-number');
     const speed = 2000;
 
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
         observer.observe(counterSection);
     }
 
-    // 3. Модальне вікно запису
+    // Модальне вікно запису
     const modal = document.getElementById('bookingModal');
     const openBtns = document.querySelectorAll('#bookingBtn, #heroBooking, #ctaBooking, .btn-primary[onclick="openModal()"]');
     const closeBtn = document.getElementById('modalClose');
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // 4. FAQ
+    // FAQ
     document.querySelectorAll('.faq-question').forEach(item => {
         item.addEventListener('click', () => {
             const parent = item.parentElement;

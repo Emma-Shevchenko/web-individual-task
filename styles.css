@@ -322,8 +322,10 @@ a {
 }
 
 .service-icon img {
-    width: 50px;
-    height: 50px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
 }
 
 .service-title {
@@ -379,8 +381,10 @@ a {
 }
 
 .advantage-icon img {
-    width: 60px;
-    height: 60px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .advantage-item h3 {
@@ -598,7 +602,7 @@ a {
 .doctor-image-wrapper {
     position: relative;
     overflow: hidden;
-    aspect-ratio: 1 / 1.4;                 /* однакове співвідношення для всіх */
+    aspect-ratio: 1 / 1.4; /* однакове співвідношення для всіх */
     background: #f0f0f0;
 }
 
@@ -606,6 +610,7 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: top center; /* Фіксуємо фокус на верхній частині фото */
 }
 
 .doctor-badge {
@@ -946,15 +951,26 @@ a {
 }
 
 .map-overlay {
+    /* Позиціонування по центру карти*/
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
+    
+    /* Оформлення блоку */
     background: rgba(255,255,255,0.95);
     padding: 30px 40px;
     border-radius: 15px;
     backdrop-filter: blur(10px);
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+    text-align: center;         
+    width: max-content;
+    max-width: 90%;
 }
 
 .location-info {
@@ -1092,6 +1108,8 @@ a {
     font-size: 28px;
     margin-bottom: 25px;
     color: var(--secondary-color);
+    
+    padding-right: 40px; /* Місце для хрестика, щоб текст не налізав */
 }
 
 .booking-form .form-group {
@@ -1217,7 +1235,7 @@ a {
 }
 
 /* ============================================================= */
-/* АДАПТИВНІСТЬ — сучасний підхід (як ти просила)               */
+/* АДАПТИВНІСТЬ*/
 /* ============================================================= */
 
 /* ПЛАНШЕТИ: 768px — 1199px */
@@ -1310,10 +1328,13 @@ a {
     .doctor-card,
     .doctor-card.reverse {
         grid-template-columns: 1fr;
+        display: flex; 
+        flex-direction: column;
     }
 
     .doctor-image-wrapper {
         height: 400px;
+        order: -1; 
     }
 
     /* Контакти */
@@ -1477,7 +1498,7 @@ a {
     }
 }
 
-/* Дуже маленькі екрани (до 480px) — додаткова підстраховка */
+/* Дуже маленькі екрани (до 480px)*/
 @media screen and (max-width: 480px) {
     .hero-title {
         font-size: 28px;
